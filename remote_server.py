@@ -21,7 +21,11 @@ def control():
         pyautogui.press('left')
     elif action == 'forward_10':
         pyautogui.press('right')
+    elif action == 'volume_up':
+        pyautogui.press('volumeup')
+    elif action == 'volume_down':
+        pyautogui.press('volumedown')
 
-    return '', 204  # No content response
+    return '', 204
 
 app.run(host='0.0.0.0', port=8000)
